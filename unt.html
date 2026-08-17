@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>💎 WALEED PAID SERVERS OFFLINE| WHITE RGB EDITION</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family:'Poppins',sans-serif;
+  background:#f5f7ff;
+  min-height:100vh;
+  padding:20px;
+  color:#1a1a2e;
+  overflow-x:hidden;
+}
+body::before {
+  content:'';
+  position:fixed; inset:0; z-index:-2;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(255,0,110,.10), transparent 42%),
+    radial-gradient(circle at 88% 25%, rgba(0,180,255,.10), transparent 42%),
+    radial-gradient(circle at 50% 95%, rgba(140,0,255,.10), transparent 45%);
+}
+
+/* floating RGB orbs */
+.orb { position:fixed; border-radius:50%; filter:blur(90px); opacity:.30; z-index:-1; animation:float 12s ease-in-out infinite; }
+.orb1 { width:340px; height:340px; background:#ff0066; top:-80px; left:-80px; }
+.orb2 { width:300px; height:300px; background:#00c8ff; top:30%; right:-100px; animation-delay:3s; }
+.orb3 { width:320px; height:320px; background:#8c00ff; bottom:-100px; left:35%; animation-delay:6s; }
+@keyframes float { 0%,100%{transform:translateY(0) scale(1);} 50%{transform:translateY(-40px) scale(1.08);} }
+
+@keyframes rgbBorder {
+  0%   { border-color:#ff0044; box-shadow:0 0 22px rgba(255,0,68,.28); }
+  25%  { border-color:#ff9900; box-shadow:0 0 22px rgba(255,153,0,.28); }
+  50%  { border-color:#00c8ff; box-shadow:0 0 22px rgba(0,200,255,.28); }
+  75%  { border-color:#8c00ff; box-shadow:0 0 22px rgba(140,0,255,.28); }
+  100% { border-color:#ff0044; box-shadow:0 0 22px rgba(255,0,68,.28); }
+}
+@keyframes gradientShift {
+  0% { background-position:0% 50%; }
+  50% { background-position:100% 50%; }
+  100% { background-position:0% 50%; }
+}
+
+.container {
+  max-width:1400px; margin:0 auto;
+  background:rgba(255,255,255,.82);
+  backdrop-filter:blur(16px);
+  border-radius:30px;
+  padding:30px;
+  border:2px solid transparent;
+  animation:rgbBorder 4s linear infinite;
+  box-shadow:0 25px 70px rgba(30,30,80,.10);
+}
+
+/* ===== HEADER ===== */
+.header {
+  text-align:center; margin-bottom:30px; padding:35px 25px;
+  background:rgba(255,255,255,.75);
+  backdrop-filter:blur(10px);
+  border-radius:26px;
+  border:2px solid transparent;
+  animation:rgbBorder 5s linear infinite;
+}
+.badge-top {
+  display:inline-block; padding:7px 22px; border-radius:50px;
+  background:linear-gradient(135deg,#ff0044,#ff9900,#00c8ff,#8c00ff);
+  background-size:300% 300%;
+  animation:gradientShift 4s ease infinite;
+  color:#fff; font-size:.78rem; font-weight:700; letter-spacing:2px; margin-bottom:15px;
+  box-shadow:0 6px 18px rgba(140,0,255,.25);
+}
+.logo {
+  font-family:'Orbitron',sans-serif;
+  font-size:3.4rem; font-weight:900; letter-spacing:4px;
+  background:linear-gradient(45deg,#ff0044,#ff9900,#00c855,#00c8ff,#8c00ff,#ff0044);
+  background-size:400% 400%;
+  -webkit-background-clip:text; background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:gradientShift 4s ease infinite;
+  text-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+.tagline { color:#555; letter-spacing:3px; margin-top:8px; font-size:.85rem; font-weight:600; }
+.tagline b { color:#8c00ff; }
+
+.system-stats {
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:18px; margin:28px auto 0; max-width:1000px;
+}
+.stat-card {
+  background:#fff; padding:22px 15px; border-radius:20px; text-align:center;
+  border:1.5px solid #eef0fa; transition:all .35s ease;
+  box-shadow:0 8px 24px rgba(30,30,80,.06);
+}
+.stat-card:hover { transform:translateY(-6px) scale(1.02); border-color:#00c8ff; box-shadow:0 12px 32px rgba(0,200,255,.18); }
+.stat-number {
+  font-family:'Orbitron',sans-serif; font-size:2rem; font-weight:800;
+  background:linear-gradient(135deg,#ff0044,#8c00ff);
+  -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+}
+.stat-label { font-size:.8rem; color:#777; margin-top:5px; font-weight:600; }
+
+/* ===== PANELS & CARDS ===== */
+.system-panel {
+  background:rgba(255,255,255,.85); padding:25px; border-radius:24px;
+  margin-bottom:25px; border:2px solid transparent; animation:rgbBorder 6s linear infinite;
+}
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(340px,1fr)); gap:25px; margin-bottom:30px; }
+.card {
+  background:#ffffff; padding:28px; border-radius:24px;
+  border:2px solid transparent; animation:rgbBorder 7s linear infinite;
+  transition:transform .3s ease;
+}
+.card:hover { transform:translateY(-8px); }
+.card-header { display:flex; align-items:center; gap:15px; margin-bottom:22px; }
+.card-icon {
+  width:54px; height:54px; border-radius:16px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:1.6rem; color:#fff;
+  background:linear-gradient(135deg,#ff0044,#ff9900,#00c8ff,#8c00ff);
+  background-size:300% 300%;
+  animation:gradientShift 4s ease infinite;
+  box-shadow:0 8px 20px rgba(140,0,255,.25);
+}
+.card-title {
+  font-family:'Orbitron',sans-serif; font-size:1.15rem; font-weight:800;
+  background:linear-gradient(135deg,#ff0044,#8c00ff);
+  -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+}
+
+/* ===== FORMS ===== */
+.form-group { margin-bottom:16px; }
+.form-label { display:block; margin-bottom:7px; font-weight:600; color:#444; font-size:.85rem; }
+.form-label i { color:#8c00ff; margin-right:5px; }
+.form-input, .form-select {
+  width:100%; padding:13px 16px;
+  background:#fbfcff; border:1.5px solid #e4e7f5; border-radius:14px;
+  color:#222; font-size:14px; transition:all .3s ease; font-family:'Poppins',sans-serif;
+}
+.form-input:focus, .form-select:focus {
+  outline:none; border-color:#00c8ff;
+  box-shadow:0 0 0 4px rgba(0,200,255,.14);
+  background:#fff;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  width:100%; padding:14px; color:#fff; border:none; border-radius:14px;
+  font-size:15px; font-weight:700; cursor:pointer; margin-top:10px;
+  font-family:'Poppins',sans-serif; letter-spacing:.5px;
+  background:linear-gradient(135deg,#ff0044,#ff9900,#00c8ff,#8c00ff);
+  background-size:300% 300%;
+  animation:gradientShift 5s ease infinite;
+  transition:transform .25s ease, box-shadow .25s ease;
+  box-shadow:0 8px 22px rgba(140,0,255,.22);
+}
+.btn:hover { transform:scale(1.02); box-shadow:0 12px 30px rgba(255,0,68,.30); }
+.btn:active { transform:scale(.98); }
+.btn-secondary { background:linear-gradient(135deg,#6b7280,#374151); animation:none; box-shadow:0 8px 20px rgba(0,0,0,.12); }
+.btn-danger { background:linear-gradient(135deg,#ff0044,#cc0033); animation:none; box-shadow:0 8px 20px rgba(255,0,68,.25); }
+.btn-warning { background:linear-gradient(135deg,#ff9900,#ff5e00); animation:none; box-shadow:0 8px 20px rgba(255,153,0,.25); }
+.btn-info { background:linear-gradient(135deg,#00c8ff,#0066ff); animation:none; box-shadow:0 8px 20px rgba(0,200,255,.25); }
+
+.system-controls { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin-bottom:18px; }
+.live-data {
+  background:#fbfcff; padding:18px; border-radius:16px;
+  font-family:'Courier New',monospace; font-size:12.5px;
+  max-height:220px; overflow-y:auto; color:#333;
+  border:1.5px dashed #c9cff0; line-height:1.7;
+}
+
+/* ===== CONSOLE ===== */
+.console-footer {
+  background:rgba(255,255,255,.85); padding:25px; border-radius:24px;
+  border:2px solid transparent; animation:rgbBorder 5s linear infinite;
+}
+.console-output {
+  background:#fbfcff; padding:18px; border-radius:16px;
+  max-height:250px; overflow-y:auto;
+  font-family:'Courier New',monospace; font-size:13px;
+  border:1.5px solid #e4e7f5;
+}
+.console-log { padding:6px 12px; margin:4px 0; border-left:3px solid #8c00ff; border-radius:6px; background:#fff; }
+.console-info { color:#0066ff; border-left-color:#00c8ff; }
+.console-success { color:#00a050; border-left-color:#00c855; }
+.console-error { color:#e00040; border-left-color:#ff0044; }
+
+.footer-credit {
+  text-align:center; margin-top:25px; padding:15px; color:#888; font-size:.82rem; letter-spacing:1px;
+}
+.footer-credit b {
+  background:linear-gradient(135deg,#ff0044,#8c00ff);
+  -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+}
+
+hr { border:none; border-top:1.5px dashed #dde1f5; margin:18px 0; }
+#pairingResult:not(:empty) { margin-top:15px; border-radius:20px; overflow:hidden; }
+
+@media (max-width:768px) {
+  .container { padding:15px; }
+  .grid { grid-template-columns:1fr; }
+  .logo { font-size:2.1rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+<div class="orb orb3"></div>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="badge-top">👑 PREMIUM WHITE RGB EDITION</div>
+    <div class="logo"><i class="fab fa-whatsapp"></i> WALEED</div>
+    <div class="tagline">✦ <b>WA BOT</b> | RGB EDITION | 24/7 NONSTOP ✦</div>
+
+    <div class="system-stats">
+      <div class="stat-card"><div class="stat-number" id="statMessages">0</div><div class="stat-label"><i class="fas fa-envelope"></i> Messages</div></div>
+      <div class="stat-card"><div class="stat-number" id="statSessions">0</div><div class="stat-label"><i class="fas fa-mobile-alt"></i> Sessions</div></div>
+      <div class="stat-card"><div class="stat-number" id="statTasks">0</div><div class="stat-label"><i class="fas fa-tasks"></i> Active Tasks</div></div>
+      <div class="stat-card"><div class="stat-number" id="statUptime">0h</div><div class="stat-label"><i class="fas fa-clock"></i> Uptime</div></div>
+    </div>
+  </div>
+
+  <!-- CONTROL CENTER -->
+  <div class="system-panel">
+    <div class="card-header">
+      <div class="card-icon"><i class="fas fa-crown"></i></div>
+      <div class="card-title">WALEED Control Center</div>
+    </div>
+    <div class="system-controls">
+      <button class="btn btn-secondary" onclick="refreshStats()"><i class="fas fa-sync-alt"></i> Refresh Stats</button>
+      <button class="btn btn-warning" onclick="showSystemInfo()"><i class="fas fa-chart-line"></i> System Info</button>
+      <button class="btn btn-info" onclick="showAllSessions()"><i class="fas fa-users"></i> All Sessions</button>
+      <button class="btn btn-danger" onclick="clearLogs()"><i class="fas fa-broom"></i> Clear Logs</button>
+    </div>
+    <div class="live-data" id="systemInfo">✨ WALEED System Ready | White RGB Mode Active ✨</div>
+  </div>
+
+  <!-- MAIN GRID -->
+  <div class="grid">
+
+    <!-- PAIR DEVICE -->
+    <div class="card">
+      <div class="card-header"><div class="card-icon"><i class="fas fa-link"></i></div><div class="card-title">Pair Device</div></div>
+      <div class="form-group">
+        <label class="form-label"><i class="fas fa-phone"></i> WhatsApp Number</label>
+        <input type="text" class="form-input" id="numberInput" placeholder="+923001234567">
+      </div>
+      <button class="btn" onclick="generateCode()"><i class="fas fa-code"></i> Generate Pairing Code</button>
+      <div id="pairingResult"></div>
+    </div>
+
+    <!-- BROADCAST ENGINE -->
+    <div class="card">
+      <div class="card-header"><div class="card-icon"><i class="fas fa-paper-plane"></i></div><div class="card-title">Broadcast Engine</div></div>
+      <form action="/send-message" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label class="form-label"><i class="fas fa-bullseye"></i> Target Type</label>
+          <select class="form-select" name="targetType" required>
+            <option value="">Select</option>
+            <option value="number">Phone Number</option>
+            <option value="group">Group ID</option>
+          </select>
+        </div>
+        <div class="form-group"><label class="form-label"><i class="fas fa-crosshairs"></i> Target</label><input type="text" class="form-input" name="target" placeholder="923001234567" required></div>
+        <div class="form-group"><label class="form-label"><i class="fas fa-file-lines"></i> Messages File (.txt)</label><input type="file" class="form-input" name="messageFile" accept=".txt" required></div>
+        <div class="form-group"><label class="form-label"><i class="fas fa-tag"></i> Prefix (Optional)</label><input type="text" class="form-input" name="prefix" placeholder="🔥 WALEED: "></div>
+        <div class="form-group"><label class="form-label"><i class="fas fa-hourglass-half"></i> Delay (Seconds)</label><input type="number" class="form-input" name="delaySec" min="5" value="10" required></div>
+        <button type="submit" class="btn"><i class="fas fa-play"></i> Start Broadcasting</button>
+      </form>
+    </div>
+
+    <!-- SESSION VAULT -->
+    <div class="card">
+      <div class="card-header"><div class="card-icon"><i class="fas fa-user-shield"></i></div><div class="card-title">Session Vault</div></div>
+      <div class="form-group"><label class="form-label"><i class="fas fa-phone"></i> Your Number</label><input type="text" class="form-input" id="numberInputForSession" placeholder="+923001234567"></div>
+      <button class="btn" onclick="generateCodeForSession()"><i class="fas fa-key"></i> Get Pairing Code</button>
+      <hr>
+      <div class="form-group"><label class="form-label"><i class="fas fa-fingerprint"></i> Session ID</label><input type="text" class="form-input" id="sessionIdDisplay" readonly placeholder="Your session will appear here"></div>
+      <button class="btn btn-secondary" onclick="showMySession()"><i class="fas fa-id-card"></i> Show My Session</button>
+      <button class="btn btn-info" onclick="getMyGroups(event)" style="margin-top:10px;"><i class="fas fa-users"></i> My Groups</button>
+      <button class="btn btn-danger" onclick="stopMySession()" style="margin-top:10px;"><i class="fas fa-power-off"></i> Stop Session</button>
+    </div>
+
+    <!-- TASK MONITOR -->
+    <div class="card">
+      <div class="card-header"><div class="card-icon"><i class="fas fa-chart-simple"></i></div><div class="card-title">Task Monitor</div></div>
+      <div class="form-group"><label class="form-label"><i class="fas fa-fingerprint"></i> Session ID</label><input type="text" class="form-input" id="sessionIdInput" placeholder="Enter your session ID"></div>
+      <button class="btn" onclick="viewTasks()"><i class="fas fa-eye"></i> View My Tasks</button>
+      <div id="sessionTasksResult" style="margin-top:15px;"></div>
+    </div>
+
+  </div>
+
+  <!-- LIVE CONSOLE -->
+  <div class="console-footer">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;">
+      <h4 style="margin:0;"><i class="fas fa-terminal" style="color:#8c00ff;"></i> Live Console</h4>
+      <button onclick="clearConsole()" style="background:linear-gradient(135deg,#ff0044,#cc0033);color:#fff;border:none;padding:9px 20px;border-radius:12px;cursor:pointer;font-weight:600;"><i class="fas fa-trash"></i> Clear</button>
+    </div>
+    <div id="consoleOutput" class="console-output"></div>
+  </div>
+
+  <div class="footer-credit">© 2026 <b>WALEED</b> •The powerfull develper waleed xd • Made with 💜</div>
+</div>
+
+<script>
+async function refreshStats() {
+  try {
+    const res = await fetch('/api/stats');
+    const stats = await res.json();
+    document.getElementById('statMessages').innerText = stats.totalMessagesSent.toLocaleString();
+    document.getElementById('statSessions').innerText = stats.activeSessions;
+    document.getElementById('statTasks').innerText = stats.activeTasks;
+    document.getElementById('statUptime').innerText = stats.uptime;
+  } catch(e) {}
+}
+
+async function showSystemInfo() {
+  try {
+    const res = await fetch('/api/stats');
+    const stats = await res.json();
+    document.getElementById('systemInfo').innerHTML =
+      '📊 WALEED SYSTEM STATS<br>✨ Messages: ' + stats.totalMessagesSent.toLocaleString() +
+      '<br>🔗 Active Sessions: ' + stats.activeSessions +
+      '<br>⚡ Running Tasks: ' + stats.activeTasks +
+      '<br>⏰ Uptime: ' + stats.uptime +
+      '<br>❌ Errors: ' + stats.errors;
+  } catch(e) {}
+}
+
+async function showAllSessions() {
+  try {
+    const res = await fetch('/api/sessions');
+    const sessions = await res.json();
+    if (sessions.length === 0) { document.getElementById('systemInfo').innerHTML = 'No active sessions'; return; }
+    let html = '👥 ACTIVE SESSIONS:<br><br>';
+    sessions.forEach(s => {
+      html += '🔹 ID: ' + s.sessionId + '<br>📱 Number: ' + s.number +
+        '<br>🔌 Status: ' + (s.isConnected ? '🟢 CONNECTED' : '🔴 DISCONNECTED') +
+        '<br>📋 Tasks: ' + s.taskCount + '<br><br>';
+    });
+    document.getElementById('systemInfo').innerHTML = html;
+  } catch(e) {}
+}
+
+function clearLogs() {
+  if (confirm('Clear logs?')) {
+    document.getElementById('systemInfo').innerHTML = '✨ Logs cleared ✨';
+    showNotif('Logs cleared', 'warning');
+  }
+}
+
+async function generateCode() {
+  const number = document.getElementById('numberInput').value;
+  if (!number) { showNotif('Enter number first!', 'error'); return; }
+  try {
+    const res = await fetch('/code?number=' + encodeURIComponent(number));
+    const result = await res.text();
+    document.getElementById('pairingResult').innerHTML = result;
+    refreshStats();
+  } catch(e) { showNotif('Error generating code', 'error'); }
+}
+
+async function generateCodeForSession() {
+  const number = document.getElementById('numberInputForSession').value;
+  if (!number) { showNotif('Enter number first!', 'error'); return; }
+  try {
+    const res = await fetch('/code?number=' + encodeURIComponent(number));
+    const result = await res.text();
+    document.getElementById('pairingResult').innerHTML = result;
+    refreshStats();
+  } catch(e) { showNotif('Error generating code', 'error'); }
+}
+
+function showMySession() {
+  const id = localStorage.getItem('wa_session_id');
+  if (id) {
+    document.getElementById('sessionIdDisplay').value = id;
+    showNotif('Session: ' + id, 'success');
+  } else { showNotif('No session found', 'warning'); }
+}
+
+async function getMyGroups(e) {
+  try {
+    const btn = e.currentTarget;
+    const original = btn.innerHTML;
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
+    btn.disabled = true;
+    const res = await fetch('/get-groups');
+    const result = await res.text();
+    showGroupsModal(result);
+    btn.innerHTML = original;
+    btn.disabled = false;
+  } catch(err) { showNotif('Error: ' + err.message, 'error'); }
+}
+
+async function stopMySession() {
+  const id = localStorage.getItem('wa_session_id');
+  if (!id) { showNotif('No session found', 'warning'); return; }
+  if (confirm('Stop session?')) {
+    try {
+      await fetch('/stop-session', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: 'sessionId=' + encodeURIComponent(id)
+      });
+      showNotif('Session stopped', 'success');
+      localStorage.removeItem('wa_session_id');
+      document.getElementById('sessionIdDisplay').value = '';
+      refreshStats();
+    } catch(e) { showNotif('Error stopping session', 'error'); }
+  }
+}
+
+function viewTasks() {
+  const id = document.getElementById('sessionIdInput').value.trim();
+  if (!id) { showNotif('Enter Session ID', 'error'); return; }
+  window.location.href = '/session-status?sessionId=' + encodeURIComponent(id);
+}
+
+function showGroupsModal(html) {
+  const modal = document.createElement('div');
+  modal.id = 'groupsModal';
+  modal.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(255,255,255,.92);display:flex;justify-content:center;align-items:center;z-index:10000;backdrop-filter:blur(15px);';
+  modal.innerHTML = '<div style="background:#fff;border:2px solid #8c00ff;border-radius:28px;padding:30px;max-width:92%;max-height:90vh;width:800px;overflow-y:auto;color:#222;box-shadow:0 25px 70px rgba(140,0,255,.25);">' +
+    '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">' +
+    '<h2 style="background:linear-gradient(135deg,#ff0044,#8c00ff);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;"><i class="fas fa-users"></i> Your Groups</h2>' +
+    '<button onclick="closeGroupsModal()" style="background:#ff0044;color:#fff;border:none;border-radius:50%;width:40px;height:40px;font-size:18px;cursor:pointer;">✕</button></div>' +
+    '<div>' + html + '</div>' +
+    '<div style="margin-top:20px;"><button onclick="closeGroupsModal()" style="background:linear-gradient(135deg,#ff0044,#8c00ff);color:#fff;padding:11px 24px;border-radius:12px;border:none;font-weight:bold;cursor:pointer;">Close</button></div></div>';
+  document.body.appendChild(modal);
+}
+
+function closeGroupsModal() {
+  const m = document.getElementById('groupsModal');
+  if (m) m.remove();
+}
+
+function showNotif(msg, type) {
+  const n = document.createElement('div');
+  const bg = type === 'error' ? 'linear-gradient(135deg,#ff0044,#cc0033)' :
+             type === 'success' ? 'linear-gradient(135deg,#00c855,#00a050)' :
+             'linear-gradient(135deg,#ff9900,#ff5e00)';
+  n.style.cssText = 'position:fixed;top:20px;right:20px;padding:15px 25px;background:' + bg + ';color:#fff;border-radius:16px;z-index:10001;font-weight:bold;box-shadow:0 10px 30px rgba(0,0,0,.2);';
+  n.innerHTML = msg;
+  document.body.appendChild(n);
+  setTimeout(() => n.remove(), 4000);
+}
+
+function addLog(msg, type) {
+  const div = document.getElementById('consoleOutput');
+  const entry = document.createElement('div');
+  entry.className = 'console-log console-' + (type || 'info');
+  entry.innerHTML = '[' + new Date().toLocaleTimeString() + '] ' + msg;
+  div.insertBefore(entry, div.firstChild);
+  while (div.children.length > 100) div.removeChild(div.lastChild);
+}
+
+function clearConsole() {
+  document.getElementById('consoleOutput').innerHTML = '';
+  addLog('Console cleared', 'info');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const id = localStorage.getItem('wa_session_id');
+  if (id) {
+    document.getElementById('sessionIdDisplay').value = id;
+    document.getElementById('sessionIdInput').value = id;
+  }
+  refreshStats();
+  setInterval(refreshStats, 30000);
+  addLog('👑 WALEED PAID TOOL 2026 ', 'success');
+  addLog('✨ WhatsApp Bot Ready | Pair your device to start', 'info');
+});
+
+window.closeGroupsModal = closeGroupsModal;
+</script>
+</body>
+</html>
